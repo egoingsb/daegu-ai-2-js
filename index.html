@@ -28,6 +28,19 @@
             <div class="col">
                 <h2>Welcome</h2>
                 hello, web
+
+                <input type="button" value="night" id="dayNightMode" onclick="
+                    if(document.querySelector('#dayNightMode').value === 'night'){
+                        document.querySelector('#root').style.backgroundColor = 'black';
+                        document.querySelector('#root').style.color = 'white';
+                        document.querySelector('#dayNightMode').value = 'day';
+                    } else {
+                        document.querySelector('#root').style.backgroundColor = 'white';
+                        document.querySelector('#root').style.color = 'black';
+                        document.querySelector('#dayNightMode').value = 'night';
+                    }
+                ">
+
                 <input type="button" value="night" onclick="
                     document.querySelector('#root').style.backgroundColor = 'black';
                     document.querySelector('#root').style.color = 'white';
