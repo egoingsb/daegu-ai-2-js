@@ -18,7 +18,8 @@
 </head>
 <body id="root">
     <div class="container">
-        <h1><a href="1.html">WEB</a></h1>        
+        <h1><a href="1.html">WEB</a></h1> 
+              
         <div class="row">
             <ol class="navigation col-3">
                 <li><a href="1.html">html</a></li>
@@ -29,25 +30,16 @@
                 <h2>Welcome</h2>
                 hello, web
 
-                <input type="button" value="night" id="dayNightMode" onclick="
-                    if(document.querySelector('#dayNightMode').value === 'night'){
+                <input type="button" value="night" id="dayNightMode2" onclick="
+                    if(this.value === 'night'){
                         document.querySelector('#root').style.backgroundColor = 'black';
                         document.querySelector('#root').style.color = 'white';
-                        document.querySelector('#dayNightMode').value = 'day';
+                        this.value = 'day';
                     } else {
                         document.querySelector('#root').style.backgroundColor = 'white';
                         document.querySelector('#root').style.color = 'black';
-                        document.querySelector('#dayNightMode').value = 'night';
+                        this.value = 'night';
                     }
-                ">
-
-                <input type="button" value="night" onclick="
-                    document.querySelector('#root').style.backgroundColor = 'black';
-                    document.querySelector('#root').style.color = 'white';
-                ">
-                <input type="button" value="day" onclick="
-                    document.querySelector('#root').style.backgroundColor = 'white';
-                    document.querySelector('#root').style.color = 'black';
                 ">
             </div>
         </div>
