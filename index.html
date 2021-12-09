@@ -31,22 +31,28 @@
                 hello, web
 
                 <input type="button" value="night" id="dayNightMode2" onclick="
-                    if(this.value === 'night'){
+                    function night(self){
                         document.querySelector('#root').style.backgroundColor = 'black';
                         document.querySelector('#root').style.color = 'white';
-                        this.value = 'day';
+                        self.value = 'day';
                         let as = document.querySelectorAll('a');
                         for(let i=0;i<as.length;i=i+1){
                             as[i].style.color='white';
                         }
-                    } else {
+                    }
+                    function day(self){
                         document.querySelector('#root').style.backgroundColor = 'white';
                         document.querySelector('#root').style.color = 'black';
-                        this.value = 'night';
+                        self.value = 'night';
                         let as = document.querySelectorAll('a');
                         for(let i=0;i<as.length;i=i+1){
                             as[i].style.color='black';
                         }
+                    }
+                    if(this.value === 'night'){
+                        night(this);
+                    } else {
+                        day(this);
                     }
                 ">
             </div>
