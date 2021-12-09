@@ -29,8 +29,7 @@
             <div class="col">
                 <h2>Welcome</h2>
                 hello, web
-
-                <input type="button" value="night" id="dayNightMode2" onclick="
+                <script>
                     function night(self){
                         document.querySelector('#root').style.backgroundColor = 'black';
                         document.querySelector('#root').style.color = 'white';
@@ -49,6 +48,8 @@
                             as[i].style.color='black';
                         }
                     }
+                </script>
+                <input type="button" value="night" id="dayNightMode2" onclick="
                     if(this.value === 'night'){
                         night(this);
                     } else {
