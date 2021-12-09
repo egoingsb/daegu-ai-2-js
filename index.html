@@ -35,15 +35,22 @@
                         document.querySelector('#root').style.backgroundColor = 'black';
                         document.querySelector('#root').style.color = 'white';
                         this.value = 'day';
+                        let as = document.querySelectorAll('a');
+                        for(let i=0;i<as.length;i=i+1){
+                            as[i].style.color='white';
+                        }
                     } else {
                         document.querySelector('#root').style.backgroundColor = 'white';
                         document.querySelector('#root').style.color = 'black';
                         this.value = 'night';
+                        let as = document.querySelectorAll('a');
+                        for(let i=0;i<as.length;i=i+1){
+                            as[i].style.color='black';
+                        }
                     }
                 ">
             </div>
         </div>
     </div>
-    
 </body>
 </html>
